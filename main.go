@@ -144,7 +144,7 @@ func Autobuild() {
 
 	var err error
 
-	args := []string{"build"}
+	args := []string{"build", "-gcflags='-memprofile=/tmp/m.p'"}
 
 	bcmd := exec.Command(cmdName, args...)
 	bcmd.Stdout = os.Stdout
