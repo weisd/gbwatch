@@ -1,7 +1,6 @@
 package main
 
 import (
-	"gopkg.in/fsnotify.v1"
 	"io/ioutil"
 	"log"
 	"os"
@@ -10,6 +9,8 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/weisd/fsnotify"
 )
 
 var (
